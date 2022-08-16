@@ -5,7 +5,7 @@ services:
     build: .
     command: python manage.py runserver 0.0.0.0:6060
     volumes:
-      - ./app/:/usr/src/app/
+      - .:/web_django
     ports:
       - 6060:6060
     env_file:
